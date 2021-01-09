@@ -121,7 +121,7 @@ table thead {
 table th,
 table td {
   padding: 0.3rem 0.6rem;
-  border: 1px solid #d6d6d6;
+  border: 1px solid #973636;
   vertical-align: middle;
 }
 *::selection {
@@ -133,7 +133,7 @@ table td {
 #site-name,
 #aside_content .author-info__name,
 #aside_content .author-info__description {
-  font-family: Titillium Web, PingFang SC, Hiragino Sans GB, "Microsoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: Titillium Web, PingFang SC, Hiragino Sans GB, "Comic Sans MS", "Microsoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 .is_right {
   text-align: right;
@@ -1784,9 +1784,9 @@ blockquote footer cite:before {
 #nav.error-no-found #error_info #error_subtitle {
   margin: 0;
   padding: 0;
-  color: #eee;
+  color: #a83c3c;
   letter-spacing: 5px;
-  font-family: Titillium Web, PingFang SC, Hiragino Sans GB, "Microsoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: Titillium Web, PingFang SC, Hiragino Sans GB, "Comic Sans MS", "Microsoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 #nav.error-no-found #error_info #error_title {
   font-size: 10rem;
@@ -2273,11 +2273,11 @@ blockquote footer cite:before {
 #footer-wrap {
   position: relative;
   padding: 2rem 1rem;
-  color: #eee;
+  color: #a83c3c;
   text-align: center;
 }
 #footer-wrap a {
-  color: #eee;
+  color: #a83c3c;
   cursor: pointer;
 }
 #footer-wrap a:hover {
@@ -2486,7 +2486,7 @@ figure.gallery-group .gallery-group-name:after {
 #nav #site_title,
 #nav #site_subtitle,
 #nav #scroll_down .scroll-down-effects {
-  color: #eee;
+  color: #a83c3c;
   text-align: center;
   text-shadow: 0.1rem 0.1rem 0.2rem rgba(0,0,0,0.15);
   line-height: 1.5;
@@ -2506,7 +2506,7 @@ figure.gallery-group .gallery-group-name:after {
 }
 #nav #site_social_icons .social-icon {
   margin: 0 0.5rem;
-  color: #eee;
+  color: #a83c3c;
   text-shadow: 0.1rem 0.1rem 0.2rem rgba(0,0,0,0.15);
   font-size: 1rem;
   cursor: pointer;
@@ -2549,7 +2549,7 @@ figure.gallery-group .gallery-group-name:after {
   bottom: 1.5rem;
   padding: 0 8%;
   width: 100%;
-  color: #eee;
+  color: #a83c3c;
   text-align: left;
 }
 #nav.post-bg #post-info #post-title {
@@ -2582,7 +2582,7 @@ figure.gallery-group .gallery-group-name:after {
   margin-right: 0.2rem;
 }
 #nav.post-bg #post-info #post-meta a {
-  color: #eee;
+  color: #a83c3c;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -2626,7 +2626,7 @@ figure.gallery-group .gallery-group-name:after {
   font-size: inherit;
 }
 #page-header a {
-  color: #eee;
+  color: #a83c3c;
 }
 #page-header a:hover {
   color: #fff;
@@ -2957,8 +2957,8 @@ figure.gallery-group .gallery-group-name:after {
   margin: 0 0 1rem;
   padding: 15px;
   border: initial;
-  border-left: 5px solid #eee;
-  background-color: #f9f9f9;
+  border-left: 5px solid #a83c3c;
+  background-color: #e5b6b6;
   border-radius: 3px;
 }
 .note h2,
@@ -3848,7 +3848,7 @@ img {
   position: relative;
   margin: 2rem 0 0.5rem;
   padding: 0.5rem 0.8rem;
-  border: 1px solid #eee;
+  border: 1px solid #a83c3c;
   -webkit-transition: box-shadow 0.3s ease-in-out;
   -moz-transition: box-shadow 0.3s ease-in-out;
   -o-transition: box-shadow 0.3s ease-in-out;
@@ -3982,7 +3982,7 @@ img {
   transform: translate(0, -50%);
 }
 .relatedPosts .relatedPosts_main .relatedPosts_date {
-  color: #eee;
+  color: #a83c3c;
   font-size: 90%;
 }
 .relatedPosts .relatedPosts_main .relatedPosts_title {
@@ -4697,8 +4697,8 @@ figure.gallery-group .gallery-group-name:after {
   margin: 0 0 1rem;
   padding: 15px;
   border: initial;
-  border-left: 5px solid #eee;
-  background-color: #f9f9f9;
+  border-left: 5px solid #a83c3c;
+  background-color: #e5b6b6;
   border-radius: 3px;
 }
 .note h2,
