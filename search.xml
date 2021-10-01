@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>关于网易云音乐“我喜欢的歌曲”歌单外链失效的解决方案</title>
+      <link href="/page/NeteaseOutchain/"/>
+      <url>/page/NeteaseOutchain/</url>
+      
+        <content type="html"><![CDATA[<h1 id="事件缘由"><a href="#事件缘由" class="headerlink" title="事件缘由"></a>事件缘由</h1><p>很多朋友们应该使用了Aplayer之类的插件用在自己的Blog上面，但是近年来（我大概是21年6月发现的问题），你的网易云喜爱歌单链接却无法在Blog上正常显示。<br>经过我的一番寻找，发现原来是不允许，即使你隐私设置歌单为公开权限也依旧无法打开。网易云会强制性的要求你进行OAuth或者说要进行身份认证，确认你登录了才能打开这个歌单。除此之外的都会<font color=#d31212 size=3 face="黑体">禁止访问</font>，如下图所示。<br><img src= /img/loading.gif data-src="https://cdn.jsdelivr.net/gh/radium-bit/res@latest/NETEASE.png" alt="如图">  </p><h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><h2 id="1-复制你的歌曲，然后新建一个歌单。"><a href="#1-复制你的歌曲，然后新建一个歌单。" class="headerlink" title="1.复制你的歌曲，然后新建一个歌单。"></a>1.复制你的歌曲，然后新建一个歌单。</h2><p>我证实在这次事件中，受影响的仅有“我喜欢”这个歌单，其他的歌单只要不是隐私歌单，就不会被拦截。举个简单的例子，我Blog原来使用的链接是</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://music.163.com/#/playlist?id=697054881</span><br></pre></td></tr></table></figure><p>在没有登录的前提下，绝对打不开这个链接。包括外链播放器</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://music.163.com/outchain/0/697054881/</span><br></pre></td></tr></table></figure><p>因此，我们需要创建一个新的公开歌单，以让APlayer能够在没有验证的前提下抓取到内容。<br>比如说这个，只是把上述歌单的内容搬运过去而已。其实一模一样。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://music.163.com/playlist?id=6998033871</span><br></pre></td></tr></table></figure><p><img src= /img/loading.gif data-src="https://cdn.jsdelivr.net/gh/radium-bit/res@latest/OutChainSucceed.png" alt="Pic"><br>这样，就可以抓取到歌单了。</p><h2 id="2-让新建歌单与“我喜欢”歌单保持一致"><a href="#2-让新建歌单与“我喜欢”歌单保持一致" class="headerlink" title="2.让新建歌单与“我喜欢”歌单保持一致"></a>2.让新建歌单与“我喜欢”歌单保持一致</h2><p>这里博主暂时还没找到好的办法，仅仅是把“我喜欢”的歌单内容全选复制粘贴。<br>如果你有更好的解决方案，或者自动脚本，请联系我的<a href="mailto:leo-nod@qq.com">邮箱</a>。非常感谢！</p><h2 id="3-部署新的歌单链接！"><a href="#3-部署新的歌单链接！" class="headerlink" title="3.部署新的歌单链接！"></a>3.部署新的歌单链接！</h2><p>之前怎么部署APlayer的就怎么来。比如说</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% meting "4948676040" "netease" "playlist" theme:#006eff%&#125;</span><br></pre></td></tr></table></figure><hr><h2 id="End"><a href="#End" class="headerlink" title="End"></a><font color=#0c74d6 size=5><strong><em>End</em></strong></font></h2>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> About_Website </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>EncryptTest</title>
       <link href="/page/EncryptTest/"/>
       <url>/page/EncryptTest/</url>
