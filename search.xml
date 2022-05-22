@@ -42,6 +42,25 @@
     
     
     <entry>
+      <title>关于VSCode和electron系软件字体发虚的解决办法</title>
+      <link href="/page/electronfontbokeh/"/>
+      <url>/page/electronfontbokeh/</url>
+      
+        <content type="html"><![CDATA[<h1 id="解决办法是关闭GPU渲染"><a href="#解决办法是关闭GPU渲染" class="headerlink" title="解决办法是关闭GPU渲染"></a>解决办法是关闭GPU渲染</h1><p>在应用程序的快捷方式中加入参数“–disable-gpu”<br>例如：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"C:\Microsoft VS Code\Code.exe"</span> --<span class="built_in">disable</span>-gpu</span><br></pre></td></tr></table></figure><p>这样，VSCode就不会发虚了，Github Desktop等软件同理。</p><h2 id="另一种解决办法，关闭GPU-FXAA选项"><a href="#另一种解决办法，关闭GPU-FXAA选项" class="headerlink" title="另一种解决办法，关闭GPU FXAA选项"></a>另一种解决办法，关闭GPU FXAA选项</h2><p>有人提到这是NVDIA FXAA惹得锅，故在NVDIA控制面板关闭FXAA即可。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> electron </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Nmap渗透信息搜集用法</title>
       <link href="/page/nmap/"/>
       <url>/page/nmap/</url>
@@ -103,7 +122,7 @@
       <link href="/page/StarWish/"/>
       <url>/page/StarWish/</url>
       
-        <content type="html"><![CDATA[<div class="note danger">            <p><strong><em>仅作分享！禁止任何形式商用</em></strong></p>          </div><div align='center' ><font color=#9999FF ><blockquote><p><font color=#9999FF ><strong><em>专辑曲目列表</em></strong></p><blockquote><p><font color=#9999FF >01.星愿StarWish<br>02.观星者<br>03.Solar Storm<br>04.Twinkle Star<br>05.星之伊始<br>06.徒劳的爱之美少女<br>07.时一现耳三千岁<br>08.星愿StarWish</p></blockquote></blockquote><hr></font><div align='left' ><p><a href="https://radium-bit.lanzous.com/b00zaamzi" target="_blank" rel="noopener">下载地址</a><br><a href="https://radium-bit.lanzous.com/icprtib" target="_blank" rel="noopener">文件校验哈希值</a></p></div><p><em>专辑官方试听</em></p>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-bDxqsluC" src="//player.bilibili.com/player.html?aid=4010407&page=1&high_quality=1&danmaku=true"            allowfullscreen="no"            scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-bDxqsluC").style.height=document.getElementById("mmedia-bDxqsluC").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-bDxqsluC").style.height=document.getElementById("mmedia-bDxqsluC").scrollWidth*0.76+"px";            };        </script>        <p>.<br><img src= /img/mona-loading-default.gif data-src="https://cdn.jsdelivr.net/gh/radium-bit/res@latest/Starwish.jpg" alt="星愿"></p>]]></content>
+        <content type="html"><![CDATA[<div class="note danger">            <p><strong><em>仅作分享！禁止任何形式商用</em></strong></p>          </div><div align='center' ><font color=#9999FF ><blockquote><p><font color=#9999FF ><strong><em>专辑曲目列表</em></strong></p><blockquote><p><font color=#9999FF >01.星愿StarWish<br>02.观星者<br>03.Solar Storm<br>04.Twinkle Star<br>05.星之伊始<br>06.徒劳的爱之美少女<br>07.时一现耳三千岁<br>08.星愿StarWish</p></blockquote></blockquote><hr></font><div align='left' ><p><a href="https://radium-bit.lanzous.com/b00zaamzi" target="_blank" rel="noopener">下载地址</a><br><a href="https://radium-bit.lanzous.com/icprtib" target="_blank" rel="noopener">文件校验哈希值</a></p></div><p><em>专辑官方试听</em></p>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-YRclRSzv" src="//player.bilibili.com/player.html?aid=4010407&page=1&high_quality=1&danmaku=true"            allowfullscreen="no"            scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-YRclRSzv").style.height=document.getElementById("mmedia-YRclRSzv").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-YRclRSzv").style.height=document.getElementById("mmedia-YRclRSzv").scrollWidth*0.76+"px";            };        </script>        <p>.<br><img src= /img/mona-loading-default.gif data-src="https://cdn.jsdelivr.net/gh/radium-bit/res@latest/Starwish.jpg" alt="星愿"></p>]]></content>
       
       
       
@@ -197,6 +216,17 @@
     
     
     <entry>
+      <title>OAuth-38edd58f-9c45-40ad-8cdd-d6d34b95513c</title>
+      <link href="/OAuth-38edd58f-9c45-40ad-8cdd-d6d34b95513c/index.html"/>
+      <url>/OAuth-38edd58f-9c45-40ad-8cdd-d6d34b95513c/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>404</title>
       <link href="/404/index.html"/>
       <url>/404/index.html</url>
@@ -208,11 +238,11 @@
     
     
     <entry>
-      <title>OAuth-38edd58f-9c45-40ad-8cdd-d6d34b95513c</title>
-      <link href="/OAuth-38edd58f-9c45-40ad-8cdd-d6d34b95513c/index.html"/>
-      <url>/OAuth-38edd58f-9c45-40ad-8cdd-d6d34b95513c/index.html</url>
+      <title>关于我？</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="—-Radium—"><a href="#—-Radium—" class="headerlink" title="—-Radium—-"></a><div align='center' ><font size=5 face="黑体">—-Radium—-</font></div></h2><p>这里是Radium，欢迎你们来到我的博客。对于这个博客的建设，我仍然是一个新手。</p><p>  关于这个博客的建设相关信息，我会逐渐的对其进行功能的细化，和完善。  </p><p>  也会时不时的可能会更新一些可能比较有趣的信息嘎！  (●ゝω)ノ</p><p>鸣谢</p><p><font color=#0079c9 size=3 face="黑体"><strong>Cloud_Server by:</strong> <a href="https://www.netlify.com/" target="_blank" rel="noopener"><strong><em>Netlify</em></strong></a></font></p><p><font color=#0079c9 size=3 face="黑体"><strong>Blog_Engine by:</strong> <a href="https://hexo.io/" target="_blank" rel="noopener"><font color=#0079c9 size=3 face="黑体"><strong><em>Hexo</em></strong></a></font></font></p><p><font size=2>头像来自b站画师<a href="https://space.bilibili.com/1373037/" target="_blank" rel="noopener">QuAn___</a></font></p><p><strong><em>请勿在此留言，如果需要请前往留言板留言</em></strong></p><p><a href="https://radiumbit.tk/comments/" target="_blank" rel="noopener">点击转到留言板</a></p>]]></content>
       
     </entry>
     
@@ -263,6 +293,17 @@
     
     
     <entry>
+      <title>我的歌单</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[<p><font color=#0c74d6 size=3 face="黑体"><strong>这是一些我喜欢的可爱小歌单，希望你喜欢  ♪（＾∀＾●）</strong></p>            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">            <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>            <script src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>            <meting-js  id="6998033871" server="netease" type="playlist" autoplay="false" mutex="true" listmaxheight="340px" preload="auto" theme="#ad7a86"></meting-js><hr><font color=#826964 face="黑体">            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">            <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>            <script src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>            <meting-js  id="2089009987" server="netease" type="playlist" autoplay="false" mutex="true" listmaxheight="340px" preload="auto" theme="#ad7a86"></meting-js><hr><p><font color=#3688f3 size=2 face="黑体"><strong>是blog的主页预备音乐喵~</strong><br><font color=#59a818 face="黑体"></p>            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">            <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>            <script src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>            <meting-js  id="4948676040" server="netease" type="playlist" autoplay="false" mutex="true" listmaxheight="340px" preload="auto" theme="#006eff"></meting-js><hr><p><font color=#3688f3 size=2 face="黑体"><strong>宁静的睡前音乐~</strong><br><font color=#000000 face="黑体"></p>            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">            <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>            <script src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>            <meting-js  id="125353234" server="netease" type="playlist" autoplay="false" mutex="true" listmaxheight="340px" preload="auto" theme="#006eff"></meting-js><hr><p><font color=#0c74d6 size=6 face="黑体"><strong><em>End</em></strong><br></font></p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>标签</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
@@ -289,29 +330,7 @@
       <link href="/upvedio/index.html"/>
       <url>/upvedio/index.html</url>
       
-        <content type="html"><![CDATA[<div align='center' ><p><strong>火绒剑对抗360</strong></p>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-KRbEMWPk" src="//player.bilibili.com/player.html?aid=200542945&page=1&high_quality=1&danmaku=true"            allowfullscreen="no"            scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-KRbEMWPk").style.height=document.getElementById("mmedia-KRbEMWPk").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-KRbEMWPk").style.height=document.getElementById("mmedia-KRbEMWPk").scrollWidth*0.76+"px";            };        </script>        <p><strong>如何把【抬棺神曲】弹得你麻麻都认不出来</strong><br>与<a href="https://space.bilibili.com/291059004" target="_blank" rel="noopener"><em>Hothink泓丰</em></a>的合作视频</p>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-YRJijRqc" src="//player.bilibili.com/player.html?aid=413090017&page=1&high_quality=1&danmaku=true"            allowfullscreen="no"            scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-YRJijRqc").style.height=document.getElementById("mmedia-YRJijRqc").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-YRJijRqc").style.height=document.getElementById("mmedia-YRJijRqc").scrollWidth*0.76+"px";            };        </script>        </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于我？</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[<h2 id="—-Radium—"><a href="#—-Radium—" class="headerlink" title="—-Radium—-"></a><div align='center' ><font size=5 face="黑体">—-Radium—-</font></div></h2><p>这里是Radium，欢迎你们来到我的博客。对于这个博客的建设，我仍然是一个新手。</p><p>  关于这个博客的建设相关信息，我会逐渐的对其进行功能的细化，和完善。  </p><p>  也会时不时的可能会更新一些可能比较有趣的信息嘎！  (●ゝω)ノ</p><p>鸣谢</p><p><font color=#0079c9 size=3 face="黑体"><strong>Cloud_Server by:</strong> <a href="https://www.netlify.com/" target="_blank" rel="noopener"><strong><em>Netlify</em></strong></a></font></p><p><font color=#0079c9 size=3 face="黑体"><strong>Blog_Engine by:</strong> <a href="https://hexo.io/" target="_blank" rel="noopener"><font color=#0079c9 size=3 face="黑体"><strong><em>Hexo</em></strong></a></font></font></p><p><font size=2>头像来自b站画师<a href="https://space.bilibili.com/1373037/" target="_blank" rel="noopener">QuAn___</a></font></p><p><strong><em>请勿在此留言，如果需要请前往留言板留言</em></strong></p><p><a href="https://radiumbit.tk/comments/" target="_blank" rel="noopener">点击转到留言板</a></p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>我的歌单</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
-      
-        <content type="html"><![CDATA[<p><font color=#0c74d6 size=3 face="黑体"><strong>这是一些我喜欢的可爱小歌单，希望你喜欢  ♪（＾∀＾●）</strong></p>            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">            <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>            <script src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>            <meting-js  id="6998033871" server="netease" type="playlist" autoplay="false" mutex="true" listmaxheight="340px" preload="auto" theme="#ad7a86"></meting-js><hr><font color=#826964 face="黑体">            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">            <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>            <script src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>            <meting-js  id="2089009987" server="netease" type="playlist" autoplay="false" mutex="true" listmaxheight="340px" preload="auto" theme="#ad7a86"></meting-js><hr><p><font color=#3688f3 size=2 face="黑体"><strong>是blog的主页预备音乐喵~</strong><br><font color=#59a818 face="黑体"></p>            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">            <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>            <script src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>            <meting-js  id="4948676040" server="netease" type="playlist" autoplay="false" mutex="true" listmaxheight="340px" preload="auto" theme="#006eff"></meting-js><hr><p><font color=#3688f3 size=2 face="黑体"><strong>宁静的睡前音乐~</strong><br><font color=#000000 face="黑体"></p>            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">            <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>            <script src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>            <meting-js  id="125353234" server="netease" type="playlist" autoplay="false" mutex="true" listmaxheight="340px" preload="auto" theme="#006eff"></meting-js><hr><p><font color=#0c74d6 size=6 face="黑体"><strong><em>End</em></strong><br></font></p>]]></content>
+        <content type="html"><![CDATA[<div align='center' ><p><strong>火绒剑对抗360</strong></p>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-iOUckpKh" src="//player.bilibili.com/player.html?aid=200542945&page=1&high_quality=1&danmaku=true"            allowfullscreen="no"            scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-iOUckpKh").style.height=document.getElementById("mmedia-iOUckpKh").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-iOUckpKh").style.height=document.getElementById("mmedia-iOUckpKh").scrollWidth*0.76+"px";            };        </script>        <p><strong>如何把【抬棺神曲】弹得你麻麻都认不出来</strong><br>与<a href="https://space.bilibili.com/291059004" target="_blank" rel="noopener"><em>Hothink泓丰</em></a>的合作视频</p>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-DnynIadQ" src="//player.bilibili.com/player.html?aid=413090017&page=1&high_quality=1&danmaku=true"            allowfullscreen="no"            scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-DnynIadQ").style.height=document.getElementById("mmedia-DnynIadQ").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-DnynIadQ").style.height=document.getElementById("mmedia-DnynIadQ").scrollWidth*0.76+"px";            };        </script>        </div>]]></content>
       
     </entry>
     
