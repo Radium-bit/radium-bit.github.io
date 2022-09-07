@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Linux使用TC和iptables对端口限速以及基础QOS</title>
+      <link href="/page/LinuxQOS/"/>
+      <url>/page/LinuxQOS/</url>
+      
+        <content type="html"><![CDATA[<h1 id="认识TC-Traffic-Control-命令—linux自带高级流控"><a href="#认识TC-Traffic-Control-命令—linux自带高级流控" class="headerlink" title="认识TC(Traffic Control)命令—linux自带高级流控"></a>认识TC(Traffic Control)命令—linux自带高级流控</h1><p>Linux操作系统中的流量控制器TC（Traffic Control）用于Linux内核的流量控制，主要是通过在输出端口处建立一个队列来实现流量控制。其中包括以下三个部分组成</p><ul><li>handle（句柄）</li><li>class（类别）</li><li>filter（过滤器）</li></ul><p>他们之间的关系是由一个handle（句柄）携带多个class（类别），<br>列队方式再handle中声明，而对于限速大小等具体的声明就在class中。</p><h2 id="TC命令格式"><a href="#TC命令格式" class="headerlink" title="TC命令格式"></a>TC命令格式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tc class [add|change|replace|del] dev DEV parent &lt;qdisc-id&gt; classid &lt;class-id&gt; qdisc &lt;qdisc specific parameters&gt; default &lt;default class-id&gt;</span><br></pre></td></tr></table></figure><p>其中[add|change|replace|del]分别表示 添加|改变|覆盖|删除 规则，是对以上三个部分的控制指令。  </p><p>DEV 指的是网卡代号，比如eth0，ens5之类的。它决定了你得规则要应用在哪张网卡上，<del><em>（可别理解成开发的意思了，虽然咱也布吉岛为什么要这么写）</em></del>  </p><p>parent表示队列，也就是刚刚提到的handle（句柄）部分，它应该与创建的handle值一致。  </p><p>qdisc表示详细规则，比如限制速度的rate 和 ceil 突发最高限度。  </p><p>default  是htb特有的队列参数，意思是所有未分类的流量都将分配给类别1:N。N的值为某个属于该handle的class。  </p><h3 id="关于限速"><a href="#关于限速" class="headerlink" title="关于限速"></a>关于限速</h3><p><em>他们的单位表示如下</em><br>|  命令   | 表示  |<br>|  —-  | —-  |<br>| kbit | kb/s |<br>| mbit  | Mb/s |<br>| mbps | Mbps |<br>| kbps | kbps |</p><p>其中有两个参数，一个是<strong>rate</strong>，另一个是<strong>ceil</strong> </p><p>rate： 表示系统可以保证的最低速度。  </p><p>ceil： 表示系统允许的最大突发速度。  </p><h2 id="举个栗子"><a href="#举个栗子" class="headerlink" title="举个栗子"></a>举个栗子</h2><p><strong>目标：对服务器1500端口出口的全部流量进行限速</strong></p><p>分析：首先我们通过TC指令创建分类，并且设定一个规则，一旦发现对应标记的数据包就进行限速，而对数据包打标记的任务交给iptables  </p><p>创建根类别1，并且声明全部未指定的流量导向到类别 1:11</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tc qdisc add dev ens5 root handle 1: htb default 11</span><br></pre></td></tr></table></figure><p>创建一个未经影响的子类别，也就是Default指定的11号，<br>限定速度写一个很大的数值就可以。命令中，”parent 1:”表示类别的父亲为根队列1:。”classid1:11″表示创建一个标识为1:11的类别。  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tc class add dev ens5 parent 1: classid 1:11 htb rate 1000mbit ceil 1000mbit</span><br></pre></td></tr></table></figure><p>创建限制速度的子类别，并且指定为12号，保证基础带宽限速512k，可突发到1024k（实际上基本没见过，都徘徊在Kb/s附近）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tc class add dev ens5 parent 1: classid 1:12 htb rate 512kbit ceil 1024kbit</span><br></pre></td></tr></table></figure><p>绑定过滤器 优先级1（最大），IP头部标签跟踪协议，当标签为12时，绑定12号子类别</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tc filter add dev ens5 parent 1: prio 1 protocol ip handle 12 fw flowid 1:12</span><br></pre></td></tr></table></figure><p>用iptables表示所有从1500端口出去的流量，都打上12号标记</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -A OUTPUT -t mangle -p tcp --sport 6000 -j MARK --set-mark 12</span><br></pre></td></tr></table></figure><p>效果：所有来自1500端口的出口流量都被iptables标记为12，并且被TC识别到，以12号子类别的方式进行QOS限速。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> TC, iptables </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于网易云音乐“我喜欢的歌曲”歌单外链失效的解决方案</title>
       <link href="/page/NeteaseOutchain/"/>
       <url>/page/NeteaseOutchain/</url>
